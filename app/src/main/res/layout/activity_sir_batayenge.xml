@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_10dp"
+    tools:context=".SearchByMobile">
+
+    <TextView
+        android:id="@+id/tv_search_by_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_marginBottom="@dimen/_3dp"
+        android:fontFamily="@font/robotoregular"
+        android:text="@string/search_appointment_by_mobile_number_if_already_exist"
+        android:textColor="@color/menuTextColor"
+        android:textSize="@dimen/text_16"
+        />
+
+
+
+
+    <RadioGroup
+        android:id="@+id/rg_search"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tv_search_by_mobile"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_offline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:text="Offline Search"/>
+        <RadioButton
+            android:id="@+id/rb_online"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Online Search"/>
+
+
+    </RadioGroup>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rg_search"
+        android:layout_marginTop="@dimen/_10dp"
+        android:background="@drawable/service_search_view"
+        android:focusable="true"
+
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/etSearchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="search mobile/name"
+            android:padding="@dimen/margin10"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/text_14" />
+
+        <ImageView
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/list_search_bg"
+            android:padding="@dimen/margin10"
+            android:paddingStart="@dimen/margin20"
+            android:paddingEnd="@dimen/margin20"
+            android:src="@drawable/ic_search" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_search1"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_search"
+        android:layout_marginTop="@dimen/_10dp"
+        android:background="@drawable/service_search_view"
+        android:focusable="true"
+
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/etSearchBar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="search mobile/name"
+
+            android:padding="@dimen/margin10"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/text_14" />
+
+        <ImageView
+            android:id="@+id/btnSearch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/list_search_bg"
+            android:padding="@dimen/margin10"
+            android:paddingStart="@dimen/margin20"
+            android:paddingEnd="@dimen/margin20"
+            android:src="@drawable/ic_search" />
+
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_get_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_search1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/margin5"
+        android:background="@drawable/buttonsap"
+        android:paddingLeft="@dimen/_5dp"
+        android:paddingRight="@dimen/_5dp"
+        android:text="@string/get_number"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite" />
+
+    <CheckBox
+        android:id="@+id/btn_search_by_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_search1"
+        android:layout_marginTop="@dimen/margin5"
+        android:paddingLeft="@dimen/_5dp"
+        android:paddingRight="@dimen/_5dp"
+        android:text="@string/search_by_name"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
+    <RelativeLayout
+        android:id="@+id/rl_skip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/margin5"
+            android:fontFamily="@font/robotoregular"
+            android:text="@string/skip"
+            android:textSize="@dimen/text_20"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

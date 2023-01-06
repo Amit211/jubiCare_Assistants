@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dip"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/remoteVideo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"/>
+
+        <TextView
+            android:id="@+id/remoteUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:text="User"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textSize="28sp"/>
+
+        <TextView
+            android:id="@+id/callState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Ringing"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/remoteUser"
+            android:textSize="16sp"
+
+            android:textAllCaps="true"
+            />
+
+        <TextView
+            android:id="@+id/callDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="4dp"
+            android:text="00:00"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/callState"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="16sp"/>
+
+
+        <RelativeLayout android:id="@+id/localVideo"
+            android:layout_width="150dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="200dp"
+            android:layout_marginBottom="@dimen/_60dp"
+            android:layout_alignParentBottom="true" />
+
+        <Button
+            android:id="@+id/hangupButton"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:layout_width="@dimen/_60dp"
+            android:layout_height="@dimen/_60dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/call_red"
+            android:textSize="20sp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_switch_camera"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_30dp"
+            android:src="@drawable/ic_switch_camera_black_24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:layout_marginStart="@dimen/_40dp"
+            app:tint="@color/colorWhite" />
+
+        <ImageView
+            android:id="@+id/start"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_30dp"
+            android:src="@drawable/ic_video_label_black_24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:visibility="gone"
+            android:layout_marginStart="@dimen/margin100"
+            />
+
+        <ImageView
+            android:id="@+id/iv_mute_unmute"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="21dp"
+            android:layout_marginEnd="@dimen/_40dp"
+            android:src="@drawable/ic_mic_black_24dp"
+            app:tint="@color/colorWhite" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

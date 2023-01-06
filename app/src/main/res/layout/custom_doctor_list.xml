@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/ll_patient_list"
+    android:orientation="horizontal">
+
+
+     <androidx.cardview.widget.CardView
+        android:id="@+id/cv_main"
+        xmlns:card_view="https://schemas.android.com/apk/res-auto"
+        android:layout_marginBottom="@dimen/margin5"
+        android:layout_marginTop="@dimen/margin8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/ll_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_3dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Name"
+                            android:layout_weight="1.5"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorGray"
+                            android:textSize="@dimen/text_14"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:orientation="vertical"
+                            android:textColor="@android:color/black">
+
+                        <TextView
+                            android:id="@+id/tv_counsellor_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:layout_weight="0.5"
+                            android:layout_marginStart="@dimen/_5dp"
+                            android:textStyle="bold"
+                            android:singleLine="true"
+                            android:textColor="@color/colorGray"
+                            android:textSize="@dimen/text_14"
+                            />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_marginTop="@dimen/_3dp"
+                        >
+
+
+                         <TextView
+                            android:layout_width="320dp"
+                            android:layout_height="wrap_content"
+                            android:text="District"
+                            android:textStyle="bold"
+                            android:layout_weight="1.5"
+                            android:textColor="@color/colorGray"
+                            android:textSize="@dimen/text_14"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:orientation="vertical"
+                            android:textColor="@android:color/black">
+
+                        <TextView
+                            android:id="@+id/tv_counsellor_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_weight="0.5"
+                            android:layout_marginStart="@dimen/_5dp"
+                            android:textColor="@color/colorGray"
+                            android:textSize="@dimen/text_14"
+                            />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="2"
+                        android:layout_marginTop="@dimen/_3dp"
+
+                        >
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="District"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:layout_weight="1.5"-->
+<!--                            android:textColor="@color/colorGray"-->
+<!--                            android:textSize="@dimen/text_14"-->
+<!--                            />-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:orientation="vertical"
+                            android:textColor="@android:color/black">
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+    <!--</LinearLayout>-->

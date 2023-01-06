@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        tools:context=".Register">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15dp"
+                    android:layout_marginBottom="3dp"
+                    android:drawableRight="@drawable/ic_star"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="@string/patientName"
+                    android:textColor="@color/menuTextColor"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_of_edittext"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/et_name"
+                        style="@style/StyleTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/robotoregular"
+                        android:inputType="textCapSentences"
+                        android:padding="@dimen/margin12" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15dp"
+                    android:layout_marginBottom="@dimen/_3dp"
+                    android:drawableRight="@drawable/ic_star"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="@string/Gender"
+                    android:textColor="@color/menuTextColor"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/rg_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/robotoregular"
+                            android:text="@string/Male"
+
+                            />
+
+                        <RadioButton
+                            android:id="@+id/rb_female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/robotoregular"
+                            android:text="@string/Female" />
+
+                        <RadioButton
+                            android:id="@+id/rb_other"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/robotoregular"
+                            android:text="@string/Other" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <!--for age change-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15dp"
+                    android:layout_marginBottom="@dimen/_3dp"
+                    android:drawableRight="@drawable/ic_star"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="What did you know?"
+                    android:textColor="@color/menuTextColor"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/rg_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/robotoregular"
+                            android:text="@string/age_age"
+
+                            />
+
+                        <RadioButton
+                            android:id="@+id/rb_dob"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/robotoregular"
+                            android:text="@string/DateofBirth" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight="1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginBottom="@dimen/_3dp"
+        android:drawableRight="@drawable/ic_star"
+        android:fontFamily="@font/robotoregular"
+        android:text="@string/age"
+        android:textColor="@color/menuTextColor"
+        android:textSize="@dimen/text_16"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_of_edittext"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_age"
+            style="@style/StyleTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/robotoregular"
+            android:inputType="number"
+            android:maxLength="3"
+            android:padding="@dimen/margin12" />
+
+    </LinearLayout>
+</LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20dp"
+                            android:layout_marginBottom="@dimen/_3dp"
+                            android:fontFamily="@font/robotoregular"
+                            android:text="@string/month"
+                            android:textColor="@color/menuTextColor"
+                            android:textSize="@dimen/text_16"
+                            android:textStyle="bold" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/shape_of_edittext"
+                            android:orientation="vertical"
+                            android:padding="@dimen/margin10"
+                            android:visibility="visible">
+
+                            <Spinner
+                                android:id="@+id/spn_month"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/robotoregular" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20dp"
+                        android:layout_marginBottom="@dimen/_3dp"
+                        android:drawableRight="@drawable/ic_star"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="@string/DateofBirth"
+                        android:textColor="@color/menuTextColor"
+                        android:textSize="@dimen/text_16"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_of_edittext"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/et_date_of_birth"
+                            style="@style/StyleTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:drawableRight="@drawable/date"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:fontFamily="@font/robotoregular"
+                            android:inputType="date"
+                            android:padding="@dimen/margin10" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="3dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="@string/aadhar"
+                    android:textColor="@color/menuTextColor"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_of_edittext"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/et_aadhar_card"
+                        style="@style/StyleTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/robotoregular"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:padding="@dimen/margin12" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="3dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="@string/Height"
+                    android:textColor="@color/menuTextColor"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_of_edittext"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/et_height"
+                        style="@style/StyleTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/robotoregular"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:padding="@dimen/margin12" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="3dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="@string/Weight"
+                    android:textColor="@color/menuTextColor"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_of_edittext"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/et_weight"
+                        style="@style/StyleTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/robotoregular"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:padding="@dimen/margin12" />
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15dp"
+                    android:layout_marginBottom="@dimen/_3dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="@string/blood"
+                    android:textColor="@color/menuTextColor"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold"
+
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_spn_blood_Group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_of_edittext"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin10"
+                    android:visibility="visible">
+
+                    <Spinner
+                        android:id="@+id/spn_blood_Group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotoregular" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_blood_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_of_edittext"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+
+                    <EditText
+                        android:id="@+id/et_blood_group"
+                        style="@style/StyleTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/robotoregular"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:padding="@dimen/margin12" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15dp"
+                    android:layout_marginBottom="@dimen/_3dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="@string/caste"
+                    android:textColor="@color/menuTextColor"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold"
+
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_spn_caste"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_of_edittext"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin10"
+                    android:visibility="visible">
+
+                    <Spinner
+                        android:id="@+id/spn_caste"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotoregular" />
+
+                </LinearLayout>
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15dp"
+                    android:layout_marginBottom="@dimen/_3dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="People with Disability (PwDs)"
+                    android:textColor="@color/menuTextColor"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold"
+
+                    />
+                <RadioGroup
+                    android:id="@+id/rg_disability"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/rb_yes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Yes"
+                        android:layout_weight="1"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/rb_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/No"
+                        android:layout_weight="1"
+                        />
+
+
+                </RadioGroup>
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:layout_marginBottom="@dimen/_3dp"
+                    android:drawableRight="@drawable/ic_star"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="@string/PatientContact"
+                    android:textColor="@color/menuTextColor"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_of_edittext"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/et_contact_number"
+                        style="@style/StyleTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/robotoregular"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:padding="@dimen/margin12" />
+
+                </LinearLayout>
+
+                <!--pin code-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:layout_marginBottom="@dimen/_3dp"
+                    android:drawableRight="@drawable/ic_star"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="@string/Pincode"
+                    android:textColor="@color/menuTextColor"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_of_edittext"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/et_pin_code"
+                        style="@style/StyleTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/robotoregular"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:padding="@dimen/margin12" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15dp"
+                    android:layout_marginBottom="@dimen/_3dp"
+                    android:drawableRight="@drawable/ic_star"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="@string/state"
+                    android:textColor="@color/menuTextColor"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_of_edittext"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+
+                    <EditText
+                        android:id="@+id/et_state"
+                        style="@style/StyleTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/robotoregular"
+                        android:padding="@dimen/margin12" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_of_edittext"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin10"
+                    android:visibility="visible">
+
+                    <Spinner
+                        android:id="@+id/spn_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotoregular" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15dp"
+                    android:layout_marginBottom="@dimen/_3dp"
+                    android:drawableRight="@drawable/ic_star"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="@string/district"
+                    android:textColor="@color/menuTextColor"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_of_edittext"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/et_district"
+                        style="@style/StyleTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/robotoregular"
+                        android:padding="@dimen/margin12" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_of_edittext"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin10"
+                    android:visibility="visible">
+
+                    <Spinner
+                        android:id="@+id/spn_district"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotoregular" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15dp"
+                    android:layout_marginBottom="@dimen/_3dp"
+                    android:drawableRight="@drawable/ic_star"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="@string/SelectBlock"
+                    android:textColor="@color/menuTextColor"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_of_edittext"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/et_block"
+                        style="@style/StyleTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/robotoregular"
+                        android:padding="@dimen/margin12" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_of_edittext"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin10"
+                    android:visibility="visible" >
+
+                    <Spinner
+                        android:id="@+id/spn_block"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotoregular" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/_15dp"
+                    android:layout_marginBottom="@dimen/_3dp"
+                    android:drawableRight="@drawable/ic_star"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="@string/post_office"
+                    android:textColor="@color/menuTextColor"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:background="@drawable/shape_of_edittext"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin8">
+
+                    <com.indev.jubicare_assistants.searchable_spinner.SearchableSpinner
+                        android:id="@+id/spn_post_office"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotoregular" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15dp"
+                    android:layout_marginBottom="@dimen/_3dp"
+                    android:drawableRight="@drawable/ic_star"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="@string/village"
+                    android:textColor="@color/menuTextColor"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_of_edittext"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin10"
+                    android:visibility="visible">
+
+                    <com.indev.jubicare_assistants.searchable_spinner.SearchableSpinner
+                        android:id="@+id/spn_village"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotoregular" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:layout_marginBottom="@dimen/_3dp"
+                    android:drawableRight="@drawable/ic_star"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="@string/Address"
+                    android:textColor="@color/menuTextColor"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_of_edittext"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/et_address"
+                        style="@style/StyleTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/robotoregular"
+                        android:inputType="textMultiLine"
+                        android:padding="@dimen/margin12" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:layout_marginBottom="@dimen/_3dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="@string/PatientEmergencyContact"
+                    android:textColor="@color/menuTextColor"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_of_edittext"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/et_emergency_contact"
+                        style="@style/StyleTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/robotoregular"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:padding="@dimen/margin12" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_marginBottom="@dimen/_3dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="@string/patient_image"
+                    android:textColor="@color/menuTextColor"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_profile_image"
+                        android:layout_width="@dimen/margin70"
+                        android:layout_height="@dimen/margin70"
+                        android:src="@drawable/camera_icon" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:layout_marginBottom="@dimen/_3dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="@string/all_fields_are_mandatory_with_star_in_this_screen"
+                    android:textColor="@color/menuTextColor"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:layout_marginBottom="@dimen/_20dp"
+                    android:background="@drawable/button"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="@string/Submit"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

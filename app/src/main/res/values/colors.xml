@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimar">#4285F4</color>
+    <color name="colorPrimary">#4fc5f9</color>
+    <color name="colorPrimaryDark">#05509e</color>
+    <color name="colorAccent">#ED94B5</color>
+    <color name="menuTextColor">#030303</color>
+
+    <!--custom colors-->
+    <color name="colorTheme">#008dc9</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGray">#838181</color>
+    <color name="color_light_gray">#D1CECE</color>
+    <color name="color_light_gray_one">#ECF3F7</color>
+    <color name="color_sky_blue">#4285F4</color>
+    <color name="google_yellow">#F4B400</color>
+    <color name="google_red">#DB4437</color>
+     <color name="color">#2A66CC</color>
+
+    <color name="color_sky_blue_dark">#A7DD68</color>
+    <color name="color_">#05A8BD</color>
+    <color name="colorBlue">#0AA5B8</color>
+    <color name="colorGrayLight">#BEBCBC</color>
+    <color name="colorRed">#FF1744</color>
+    <color name="colorPink">#F50057</color>
+    <color name="colorPurple">#4A148C</color>
+    <color name="colorOrange">#F72E1E</color>
+    <color name="cardColor">#f8babb</color>
+    <color name="colorGrayVeryLight">#F0EDED</color>
+    <color name="holo_green_light">#3ca322</color>
+    <color name="green_light">#009688</color>
+    <color name="color_blue_google">#4285F4</color>
+    <color name="color_red_google">#DB4437</color>
+    <color name="color_yellow_google">#F4B400</color>
+    <color name="color_green_google">#0F9D58</color>
+</resources>

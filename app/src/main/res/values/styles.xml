@@ -1,0 +1,12 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="StyleTheme" parent="Theme.AppCompat.Light.DarkActionBar"
+        android:maxLength="1" android:paddingLeft="5dp" android:paddingTop="5dp" android:paddingBottom="5dp" />
+
+</resources>

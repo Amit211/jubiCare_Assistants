@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <item-->
+<!--        android:id="@+id/save"-->
+<!--        android:icon="@drawable/save"-->
+<!--        android:title="Save Data"-->
+<!--        app:showAsAction="always" />-->
+<!--    <item-->
+<!--        android:id="@+id/stop_survey"-->
+<!--        android:icon="@drawable/stop_survey"-->
+<!--        android:title="@string/stop"-->
+<!--        app:showAsAction="always" />-->
+    <item  android:id="@+id/addAppointment"
+        android:title="Add appointment"
+        android:icon="@drawable/edit_profile"
+        app:showAsAction="always"
+        android:visible="false"
+        />
+
+
+    <item  android:id="@+id/Appointment"
+        android:title="Add appointment"
+        android:icon="@drawable/appointment"
+        app:showAsAction="always"
+        android:visible="false"
+        />
+    <item  android:id="@+id/deleteAppointment"
+        android:title="Delete Appointment"
+        android:icon="@drawable/ic_delete_forever_black_24dp"
+        app:showAsAction="always"
+        android:visible="false"
+        />
+
+</menu>

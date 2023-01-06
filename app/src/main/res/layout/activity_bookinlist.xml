@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_5dp"
+    android:orientation="vertical"
+    tools:context=".BookinlistActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/service_search_view"
+        >
+
+        <EditText
+            android:id="@+id/etSearchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="@string/search_by_mobile_or_aadhaar"
+            android:padding="@dimen/margin10"
+            android:textColor="@color/colorGray"
+            android:inputType="number"
+            android:textSize="@dimen/text_14" />
+
+        <ImageView
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/list_search_bg"
+            android:padding="@dimen/margin10"
+            android:paddingStart="@dimen/margin20"
+            android:paddingEnd="@dimen/margin20"
+            android:src="@drawable/ic_search" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_add_patient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin10"
+        >
+
+        <TextView
+            android:id="@+id/tv_addprofile"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:text="Add Appointment"
+            android:padding="@dimen/_10dp"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_list_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textStyle="italic"
+            android:text=""
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorBlack" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:text="Note:"
+        android:textSize="@dimen/margin14"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:textSize="@dimen/margin12"
+        android:text="* To regieter appointment, click on the patient name below."
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:textSize="@dimen/margin12"
+        android:text="* To add a new member click on Add Profile tab."
+        />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_1dp"
+        android:layout_marginTop="@dimen/_5dp"
+        android:background="@color/colorGray"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_Patient_patient_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tvNoDataFound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_data_found"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:visibility="gone"
+            />
+        <Button
+            android:id="@+id/btn_go_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/go_home"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:paddingLeft="@dimen/_5dp"
+            android:paddingRight="@dimen/_5dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button"
+            android:visibility="gone"
+            android:layout_below="@id/tvNoDataFound"
+            android:layout_marginTop="@dimen/margin5"
+            />
+
+
+
+    </RelativeLayout>
+</LinearLayout>

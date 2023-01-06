@@ -1,0 +1,277 @@
+<resources>
+    <string name="app_name">JubiCare Assistants</string>
+    <string name="developed_by">Developed By: Indev Consultancy Pvt. Ltd.</string>
+    <string name="otpHeading">Enter your mobile number</string>
+    <string name="Otphint">Tap next to verify your account with your mobile number</string>
+    <string name="don_t_have_an_account_signup">Don\'t have an account ? Signup </string>
+    <string name="btnNext">Next</string>
+    <string name="Otphint2">Please type the verification code sent to</string>
+    <string name="Otphint3">Please type the verification code shown on your popup window.</string>
+    <string name="Otperror">Resend</string>
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="Other">Other</string>
+    <string name="Submit">Submit</string>
+    <string name="aadhar">Aadhar Number</string>
+    <string name="Height">Height (Cms)</string>
+    <string name="Weight">Weight (Kgs)</string>
+    <string name="patientName">Name</string>
+    <string name="Gender">Gender</string>
+    <string name="DateofBirth">Date of Birth</string>
+    <string name="PatientContact">Contact Number</string>
+    <string name="state">State</string>
+    <string name="PatientEmergencyContact">Emergency Contact</string>
+    <string name="patient_image">Profile Photo</string>
+    <string name="patient_appointment">Patient Appointment</string>
+    <string name="total_pending_cases">Total Pending Cases</string>
+    <string name="total_no_of_cases">Total no of Cases</string>
+    <string name="patient_list">Patient List</string>
+    <string name="registration_date">Registration Date</string>
+    <string name="book_an_appointment">Book an Appointment</string>
+    <string name="ViewProfile">Profile</string>
+    <string name="Dstrict">District</string>
+    <string name="Address">Address</string>
+    <string name="current_medications">Currently taking any prescribed medication</string>
+    <string name="symptom_of_patient">Symptoms of the Patient</string>
+    <string name="DateofMedicinePrescribed">Date of Prescribed Medication</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="conducted_any_tests">Conducted any Tests</string>
+    <string name="DateofTestDone">Date of Test</string>
+    <string name="DocumentAttachment">Document Attachment</string>
+    <string name="view_drug_recommend">View Patient Drug recommendation</string>
+    <string name="setTimeDuration">Set Time Duration</string>
+    <string name="doctorname">Doctor Name</string>
+    <string name="medicinePrescribed">Medicine Prescribed</string>
+    <string name="From">From</string>
+    <string name="To">To</string>
+
+
+    <string-array name="states">
+        <item>Select State</item>
+        <item>UP</item>
+        <item>Gujarat</item>
+    </string-array>
+
+    <string-array name="district1">
+        <item>Select District</item>
+        <item>Gorakhpur</item>
+        <item>Allahabad</item>
+        <item>Varanasi</item>
+    </string-array>
+
+    <string-array name="district2">
+        <item>Select District</item>
+        <item>Surat</item>
+        <item>Ahmedabad</item>
+        <item>Navsari</item>
+    </string-array>
+
+    <string name="emergency_cases">Emergency Case</string>
+    <string name="jubilant_telemedicine">Jubilant Telemedicine</string>
+    <string name="SelectVillage">Village</string>
+    <string name="SelectBlock">Block</string>
+    <string name="doctorEmergency">Doctor Emergency</string>
+    <string name="reasonofEmergency">Reason of Emergency</string>
+    <string name="Email">Email id</string>
+    <string name="Username">Username</string>
+    <string name="password">Password</string>
+    <string name="District">District</string>
+    <string name="total_assigned">Total Assigned</string>
+    <string name="totalhandledcases">Total Handled Cases</string>
+    <string name="pending_delivery">Pending Delivery</string>
+    <string name="view">View</string>
+    <string name="age">Age (in year(s))</string>
+    <string name="month">Select Month</string>
+    <string name="village">Village</string>
+    <string name="district">District</string>
+    <string name="blood">Blood Group</string>
+    <string name="symptom_of_the_patient">Symptom of the Patient</string>
+    <string name="current_medication">Current Medication</string>
+    <string name="date_of_medication">Date of Medication</string>
+    <string name="currently_test_done">Currently Test Done</string>
+    <string name="date_of_test_done">Date of Test Done</string>
+    <string name="document_attachment">Document Attachment</string>
+    <string name="assigned_doctor_name">Assigned Doctor Name</string>
+    <string name="_95">95</string>
+    <string name="appointment">AN APPOINTMENTS</string>
+    <string name="book">BOOK</string>
+    <string name="appointmentold">Old APPOINTMENTS</string>
+
+    <string name="doctor_assigned">Doctor Assignment</string>
+    <string name="doctor_to_address_appointments">Doctor to Address Appointments</string>
+    <string name="medicine_to_be_delivered">Medicine to be Delivered</string>
+    <string name="new_appointment">New Appointment</string>
+    <string name="appointments_assigned">Assigned Appointments</string>
+    <string name="not_assigned_appointments">Not Assigned Appointments</string>
+    <string name="if_any_emergency_then_check_here">if any emergency then check the box given below.</string>
+    <string name="to_be_filled_by_doctor">To be filled by doctor</string>
+    <string name="select_state">Select State</string>
+    <string name="select_district">Select District</string>
+    <string name="select_bloodgroup">Select Blood Group</string>
+    <string name="select_block">Select Block</string>
+    <string name="select_village">Select Village</string>
+    <string name="Symptom">Symptom</string>
+    <string name="select_disease">Diseases</string>
+    <string name="select_symptom">Select Symptom</string>
+    <string name="select_doctor">Select Doctor</string>
+    <string name="Pincode">Pincode</string>
+    <string name="emergency_contact_number">Emergency Contact Number</string>
+    <string name="symptoms_of_the_patient">Symptoms of the Patient</string>
+    <string name="currently_taking_any_prescribed_medication">Currently taking any Prescribed Medication</string>
+    <string name="date_of_prescribed_medication">Date of Prescribed Medication</string>
+    <string name="emergency">Emergency</string>
+    <string name="patient_disease">Patient Disease</string>
+    <string name="already_prescribed_medicine">Already Prescribed Medicine</string>
+    <string name="not_prescribed_medicine">Not Prescribed Medicine</string>
+    <string name="total_delivered_medicine">Total Delivered Medicine</string>
+    <string name="pending_delivered_of_medicine">Pending Delivered of Medicine</string>
+    <string name="diseases">Diseases</string>
+    <string name="no_of_doses">No. of Doses</string>
+    <string name="refer_to_doctor">Refer to Doctor</string>
+    <string name="refer_to_specialist">Refer to Specialist</string>
+    <string name="next_appointment">Next Appointment</string>
+    <string name="is_test_done">Is test done?</string>
+    <string name="date_of_test">Date of test done</string>
+    <string name="date_of_assigned_doctor">Date of Assigned Doctor</string>
+    <string name="assigned_by">Assigned by</string>
+    <string name="remarks_by_doctor">Remarks by Doctor</string>
+    <string name="is_doctor_done">Is doctor done?</string>
+    <string name="date_of_doctor_done">Date of doctor done</string>
+    <string name="is_pharmacists_done">Is pharmacists done?</string>
+    <string name="is_pharmacists_done_on">Is pharmacists done on?</string>
+    <string name="permanent_address">Permanent Address</string>
+    <string name="medicine">Medicine</string>
+    <string name="assigned_pharmacists">Assigned Pharmacists</string>
+    <string name="date_of_assigned_pharmacists">Date of Assigned Pharmacists</string>
+    <string name="medicine_delivered">Medicine Delivered</string>
+    <string name="is_verified">Is verified?</string>
+    <string name="appointment_type">Appointment type</string>
+    <string name="date_of_phamacists_done">Date of pharmacists done</string>
+    <string name="prescription_amp_no_of_doses"><![CDATA[Prescription]]></string>
+    <string name="add_test_and_sub_test">Add Test and Sub Test</string>
+    <string name="please_select_village">Please Select Village</string>
+    <string name="send">send</string>
+    <string name="show_password">Show Password</string>
+    <string name="signup">Signup</string>
+    <string name="search_by_mobile_or_aadhaar">Search by Mobile or Aadhaar...</string>
+    <string name="user_name">USER NAME</string>
+    <string name="JUBICARE"> J U B I C A R E                              A S S I S T A N T </string>
+    <string name="Password">PASSWORD</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="enter_mobile_no">Enter Mobile no.</string>
+    <string name="it_s_okay_reset_your_password">It\'s Okay! Reset your password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="enter_mobile_number">Enter mobile number</string>
+    <string name="post_office">Post Office</string>
+    <string name="select_post_office">Select Post Office</string>
+    <string name="all_fields_are_mandatory_with_star_in_this_screen">Note: All fields are mandatory with star (*) in this screen.</string>
+    <string name="add_profile">Add Profile</string>
+    <string name="days_of_prescription">Days of Prescription</string>
+    <string name="prescription_interval">Prescription Interval</string>
+    <string name="sub_test_name">Sub Test Name</string>
+    <string name="test_name">Test Name</string>
+    <string name="search_appointment_by_mobile_number_if_already_exist">Search appointment by mobile number if already exist.</string>
+    <string name="search_by_mobile">Search by Mobile</string>
+    <string name="skip">Skip</string>
+    <string name="we_re_here_for_you_if_you_have_any_further_query_please_contact_our_help_line_number">We\'re here for you, if you have any further query please contact our Help Line number.</string>
+    <string name="patient_symptoms">Patient Symptoms</string>
+    <string name="diagnosis">Diagnosis</string>
+    <string name="if_any_current_medicine_prescription">If any current medicine prescription</string>
+    <string name="test_conducted_if_any">Test Conducted (if any)</string>
+    <string name="emergency_case">Emergency Case</string>
+    <string name="consultation_completion_time">Consultation Completion Time</string>
+    <string name="consultation_status">Consultation Status</string>
+    <string name="doctor_s_advisory">Doctor\'s Advisory</string>
+    <string name="assigned_pharmacist">Assigned Pharmacist</string>
+    <string name="pharmacist_drugs_delivery_status">Pharmacist drugs delivery status?</string>
+    <string name="pharmacist_assignment_date">Pharmacist Assignment Date</string>
+    <string name="prescription_eating_schedule">Prescription Eating Schedule</string>
+    <string name="prescription_sos">Prescription SOS</string>
+    <string name="title_activity_disclaimer">disclaimer</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="location">Location</string>
+    <string name="test_document">Test Document</string>
+    <string name="default_notification_channel_id">Channel_id</string>
+    <string name="search_medicine">Search medicine</string>
+    <string name="add_medicine">Add New Medicine</string>
+    <string name="no_data_found">Oops...No data found!</string>
+    <string name="click_on_button_for_view_medical_information_details">Click on button for view medical information details</string>
+    <string name="is_covered_area">Is Covered Area?</string>
+    <string name="go_home">Go Home</string>
+    <string name="appointment_count">Appointment Count</string>
+    <string name="paid">Paid</string>
+    <string name="free">Free</string>
+    <string name="enter_old_password">Enter Old Password</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="enter_confirm_password">Enter Confirm Password</string>
+    <string name="change_password">Change Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="total_pending_case">TOTAL PENDING CASE</string>
+    <string name="total_emergency_case">TOTAL EMERGENCY CASE</string>
+    <string name="test_pending_by_pharmacy">TEST PENDING BY PHARMACY</string>
+    <string name="test_done_by_pharmacy">TEST DONE BY PHARMACY</string>
+    <string name="total_handle_case">TOTAL HANDLE CASE</string>
+    <string name="doctor_unavailability">DOCTOR UNAVAILABILITY</string>
+    <string name="please_specify_the_reason">Please specify the reason</string>
+    <string name="profile">Profile</string>
+    <string name="interval">Interval</string>
+    <string name="eating_schedule">Eating Schedule</string>
+    <string name="sos">SOS</string>
+    <string name="days">Days</string>
+    <string name="appointment_added">Appointment Added</string>
+    <string name="assigned_doctor">Assigned Doctor</string>
+    <string name="assign_doctor">Assign Doctor</string>
+    <string name="your_appointment_has_been_made_successfully">Your appointment has been made successfully.</string>
+    <string name="appointment_delete">Appointment Delete</string>
+    <string name="are_you_sure_to_want_to_delete_this_appointment">Are you sure to want to delete this appointment?</string>
+    <string name="is_test_verified_by_doctor">Is Test Verified By Doctor?</string>
+    <string name="close">Close</string>
+    <string name="click_here">click here</string>
+    <string name="view_patient_history"><u>Click Here for View Patient Previous History</u></string>
+    <string name="view_prescription_click"><u>Click Here for View Prescription Slip</u></string>
+    <string name="age_age">Age</string>
+    <string name="call">Call</string>
+    <string name="get_number">Get Number</string>
+    String[] monthlist  ={"" ,"" ,"" ,"" ,"" ,"" ,"" ,"" ,"" ,"" ,"" ,""};
+
+    <string-array name="months">
+        <item>Select Months </item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="generate">Generate Coupans</string>
+    <string name="distributed">Distributed Coupans</string>
+    <string name="buycoupan">Buy Coupans</string>
+    <string name="wallet">Wallet</string>
+    <string name="caste">Caste</string>
+    <string name="select_caste">Select Caste</string>
+    <string name="Bp">BP</string>
+    <string name="sugar">Sugar</string>
+    <string name="search_by_name">Search by Name</string>
+    <string name="Open">open</string>
+    <string name="Close">close</string>
+    <string name="ok">ok</string>
+    <string name="alert">aret</string>
+    <string name="start_video_call">Start Video Call</string>
+    <string name="back">Back</string>
+</resources>

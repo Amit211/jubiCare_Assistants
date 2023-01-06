@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_5dp"
+    tools:context=".HomeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_appointment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/colorWhite"
+                    card_view:cardUseCompatPadding="true" />
+
+                <LinearLayout
+                    android:id="@+id/book"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin135"
+                    android:layout_marginHorizontal="@dimen/_2dp"
+                    android:layout_marginTop="@dimen/margin30"
+                    android:background="@drawable/bodertab"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        android:orientation="vertical"
+                        android:padding="@dimen/margin5">
+
+                        <ImageView
+                            android:id="@+id/tv_appointmen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/margin120"
+                            android:background="@drawable/appointment" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="@dimen/_10dp"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/gray" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.9"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_weight="1"
+                                android:gravity="start"
+                                android:text="@string/book"
+                                android:textColor="#ee7e1d"
+                                android:textSize="23dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_oldapointment"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_weight="1"
+                                android:text="@string/appointment"
+                                android:textColor="@color/color_blue_google"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Oldpatient"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin135"
+                    android:layout_marginTop="@dimen/margin30"
+                    android:layout_marginHorizontal="@dimen/_2dp"
+                    android:background="@drawable/bodertab"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        android:orientation="vertical"
+                        android:padding="@dimen/margin5">
+
+                        <ImageView
+                            android:layout_width="@dimen/margin120"
+                            android:layout_height="@dimen/margin120"
+                            android:background="@drawable/user_placeholder" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="@dimen/_10dp"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/gray" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.9"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_weight="1"
+                                android:gravity="start"
+                                android:text="PROFILE"
+                                android:textColor="#ee7e1d"
+                                android:textSize="23dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_appointment"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_10dp"
+                                android:layout_weight="1"
+                                android:text="@string/appointmentold"
+                                android:textColor="@color/color_blue_google"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_2dp"
+
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tv_doctorStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_1dp"
+                        android:gravity="start"
+                        android:text="Doctor's Status"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="23dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_2dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/avilabe"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin75"
+                        android:layout_marginTop="@dimen/_30dp"
+                        app:cardBackgroundColor="#80E383"
+                        app:cardCornerRadius="@dimen/_5dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <ImageView
+                                android:id="@+id/tv_doctorAvil"
+                                android:layout_width="@dimen/margin40"
+                                android:layout_height="@dimen/margin40"
+                                android:layout_marginLeft="@dimen/_20dp"
+                                android:src="@drawable/available" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Available"
+                                android:layout_marginStart="@dimen/_15dp"
+                                android:layout_weight="1"
+                                android:textColor="@color/white"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/count"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text=""
+                                android:gravity="center"
+                                android:layout_weight="1.9"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:textSize="17dp" />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_2dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/unAvilabe"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin75"
+                            android:layout_marginTop="@dimen/_30dp"
+                            android:layout_marginBottom="@dimen/_10dp"
+                            app:cardBackgroundColor="#FFFFC9B8"
+                            app:cardCornerRadius="@dimen/_5dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <ImageView
+                                    android:layout_width="@dimen/margin40"
+                                    android:layout_height="@dimen/margin40"
+                                    android:layout_marginLeft="@dimen/_20dp"
+                                    android:src="@drawable/unavailable" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="Unavailable"
+                                    android:layout_marginStart="@dimen/_15dp"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/white"
+                                    android:textSize="15dp" />
+
+                                <TextView
+                                    android:id="@+id/tvDoctorNotAvailable"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1.9"
+                                    android:text=""
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:textSize="17dp" />
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "758358305953",
+    "project_id": "jubicare-assistant",
+    "storage_bucket": "jubicare-assistant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:758358305953:android:cde98b410aa0b81226d4e0",
+        "android_client_info": {
+          "package_name": "com.indev.jubicare_assistants"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "758358305953-aqb671cgqgjvso2j8ni18i7u9cjrdp4r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfGDActU67aRi8tFUuvKV2agDVT7cqp30"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "758358305953-aqb671cgqgjvso2j8ni18i7u9cjrdp4r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

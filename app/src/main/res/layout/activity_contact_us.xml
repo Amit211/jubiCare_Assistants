@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/loginbg"
+    tools:context=".ContactUs"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10dp"
+        >
+    <TextView
+        android:id="@+id/tv_get_in_touch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_marginBottom="@dimen/_3dp"
+        android:fontFamily="@font/robotoregular"
+        android:text="Get In Touch"
+        android:textSize="@dimen/text_25"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_we_are_here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin5"
+        android:layout_marginBottom="@dimen/_3dp"
+        android:fontFamily="@font/robotoregular"
+        android:text="@string/we_re_here_for_you_if_you_have_any_further_query_please_contact_our_help_line_number"
+        android:textSize="@dimen/text_16"
+        android:textColor="@color/colorGray"
+        android:layout_below="@+id/tv_get_in_touch"
+        />
+
+    <TextView
+        android:id="@+id/tv_help_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_marginBottom="@dimen/_3dp"
+        android:fontFamily="@font/robotoregular"
+        android:text="Help line number:"
+        android:textSize="@dimen/text_16"
+        android:textColor="@color/black"
+        android:layout_below="@+id/tv_we_are_here"
+        />
+
+    <TextView
+        android:id="@+id/tv_mobile_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_marginBottom="@dimen/_3dp"
+        android:fontFamily="@font/robotoregular"
+        android:text="  +91 9990380292"
+        android:drawableStart="@drawable/call"
+        android:textSize="@dimen/text_16"
+        android:textColor="@color/color_blue_google"
+        android:layout_below="@+id/tv_help_line"
+        android:visibility="gone"
+        />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_village_level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_block_level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_district_level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10dp"
+        />
+
+</LinearLayout>

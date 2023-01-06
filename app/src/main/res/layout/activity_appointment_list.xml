@@ -1,0 +1,1160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_3dp"
+    android:background="@drawable/loginbg"
+
+    android:orientation="vertical"
+    tools:context=".AppointmentView">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_medical_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_symptoms_patient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="@string/patient_symptoms"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical"
+            android:textColor="@android:color/black">
+
+            <TextView
+                android:id="@+id/tv_patient_symptoms"
+                style="@style/StyleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/robotoregular"
+                android:text="" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_bp_lower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="BP Low"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical"
+            android:textColor="@android:color/black">
+
+            <TextView
+                android:id="@+id/tv_bplowerP"
+                style="@style/StyleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/robotoregular"
+                android:text="" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_bp_upper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="BP High"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical"
+            android:textColor="@android:color/black">
+
+            <TextView
+                android:id="@+id/tv_bpupperP"
+                style="@style/StyleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/robotoregular"
+                android:text="" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_sugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="Sugar"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical"
+            android:textColor="@android:color/black">
+
+            <TextView
+                android:id="@+id/tv_sugarP"
+                style="@style/StyleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/robotoregular"
+                android:text="" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_temprature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="Temperature"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical"
+            android:textColor="@android:color/black">
+
+            <TextView
+                android:id="@+id/tv_tempratureP"
+                style="@style/StyleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/robotoregular"
+                android:text="" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_blood_oxygen_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="Blood Oxygen level (SpO2) in %"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical"
+            android:textColor="@android:color/black">
+
+            <TextView
+                android:id="@+id/tv_blood_oxygen_levelP"
+                style="@style/StyleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/robotoregular"
+                android:text="" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_Pulse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="Pulse in (Bpm)"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical"
+            android:textColor="@android:color/black">
+
+            <TextView
+                android:id="@+id/tv_PulseP"
+                style="@style/StyleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/robotoregular"
+                android:text="" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_patient_remarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="Patient Remarks"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical"
+            android:textColor="@android:color/black">
+
+            <TextView
+                android:id="@+id/tv_patient_remarkss"
+                style="@style/StyleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/robotoregular"
+                android:text="" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_patient_disease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="@string/diagnosis"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical"
+            android:textColor="@android:color/black">
+
+            <TextView
+                android:id="@+id/tv_disease_patient"
+                style="@style/StyleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/robotoregular"
+                android:text="" />
+
+        </LinearLayout>
+
+        <!--new fields for medicine-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_patient_medicine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="@font/robotoregular"
+                android:text="@string/medicine"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5dp"
+                android:orientation="vertical"
+                android:textColor="@android:color/black">
+
+                <TextView
+                    android:id="@+id/tv_medicine_patient"
+                    style="@style/StyleTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_days_prescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="@font/robotoregular"
+                android:text="@string/days_of_prescription"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5dp"
+                android:orientation="vertical"
+                android:textColor="@android:color/black">
+
+                <TextView
+                    android:id="@+id/tv_prescription_days"
+                    style="@style/StyleTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_interval_prescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="@font/robotoregular"
+                android:text="@string/prescription_interval"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5dp"
+                android:orientation="vertical"
+                android:textColor="@android:color/black">
+
+                <TextView
+                    android:id="@+id/tv_prescription_interval"
+                    style="@style/StyleTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_eating_schedule_prescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="@font/robotoregular"
+                android:text="@string/prescription_eating_schedule"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5dp"
+                android:orientation="vertical"
+                android:textColor="@android:color/black">
+
+                <TextView
+                    android:id="@+id/tv_prescription_eating_schedule"
+                    style="@style/StyleTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_sos_prescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="@font/robotoregular"
+                android:text="@string/prescription_sos"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5dp"
+                android:orientation="vertical"
+                android:textColor="@android:color/black">
+
+                <TextView
+                    android:id="@+id/tv_prescription_sos"
+                    style="@style/StyleTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/HorizontalScrollView"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/RelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10">
+
+                <TableLayout
+                    android:id="@+id/table_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TableLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!--test data-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_name_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="@font/robotoregular"
+                android:text="@string/test_name"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5dp"
+                android:orientation="vertical"
+                android:textColor="@android:color/black">
+
+                <TextView
+                    android:id="@+id/tv_test_name"
+                    style="@style/StyleTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_name_subtest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="@font/robotoregular"
+                android:text="@string/sub_test_name"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5dp"
+                android:orientation="vertical"
+                android:textColor="@android:color/black">
+
+                <TextView
+                    android:id="@+id/tv_subtest_name"
+                    style="@style/StyleTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/HorizontalScrollViewTest"
+android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/RelativeLayoutTest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10">
+
+                <TableLayout
+                    android:id="@+id/table_main_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TableLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/tv_test_docs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="@string/test_document"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:padding="@dimen/_3dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_test_docs_inprofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_test_docs"
+                android:layout_width="@dimen/margin100"
+                android:layout_height="@dimen/margin100"
+                android:src="@drawable/doc_attach"
+                app:civ_border_color="@color/colorGrayLight"
+                app:civ_border_width="@dimen/margin2" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_any_taking_prescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="@string/if_any_current_medicine_prescription"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical"
+            android:textColor="@android:color/black">
+
+            <TextView
+                android:id="@+id/tv_taking_any_prescription"
+                style="@style/StyleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/robotoregular"
+                android:text="" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_taking_prescription_any_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="@string/date_of_prescribed_medication"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical"
+            android:textColor="@android:color/black">
+
+            <TextView
+                android:id="@+id/tv_date_taking_any_prescription"
+                style="@style/StyleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/robotoregular"
+                android:text="" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_test_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="@string/test_conducted_if_any"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical"
+            android:textColor="@android:color/black">
+
+            <TextView
+                android:id="@+id/tv_is_test_done"
+                style="@style/StyleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/robotoregular"
+                android:text="" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_test_done_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="@string/date_of_test"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical"
+            android:textColor="@android:color/black">
+
+            <TextView
+                android:id="@+id/tv_is_test_done_date"
+                style="@style/StyleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/robotoregular"
+                android:text="" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_emergency_any"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="@string/emergency_case"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical"
+            android:textColor="@android:color/black">
+
+            <TextView
+                android:id="@+id/tv_any_emergency"
+                style="@style/StyleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/robotoregular"
+                android:text="" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_doctor_assigned"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="@string/assigned_doctor"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical"
+            android:textColor="@android:color/black">
+
+            <TextView
+                android:id="@+id/tv_assigned_doctor1"
+                style="@style/StyleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/robotoregular"
+                android:text="sujinder" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_assigned_doctor_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="@font/robotoregular"
+                android:text="@string/date_of_assigned_doctor"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5dp"
+                android:orientation="vertical"
+                android:textColor="@android:color/black">
+
+                <TextView
+                    android:id="@+id/tv_date_assigned_doctor"
+                    style="@style/StyleTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_assigned_pharmacists"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="@string/assigned_pharmacist"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_14"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical"
+            android:textColor="@android:color/black"
+            >
+
+            <TextView
+                android:id="@+id/tv_pharmacists_assigned"
+                style="@style/StyleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/robotoregular"
+                android:text="" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_assigned_pharmacists_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="@string/pharmacist_assignment_date"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_14"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical"
+            android:textColor="@android:color/black"
+            >
+
+            <TextView
+                android:id="@+id/tv_date_pharmacists_assigned"
+                style="@style/StyleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/robotoregular"
+                android:text="" />
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+        <TextView
+            android:id="@+id/tv_medicine_delivered"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="@string/medicine_delivered"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical"
+            android:textColor="@android:color/black">
+
+            <TextView
+                android:id="@+id/tv_medicine_delivered_on"
+                style="@style/StyleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/robotoregular"
+                android:text="" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_is_verified"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="@string/is_verified"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical"
+            android:textColor="@android:color/black">
+
+            <TextView
+                android:id="@+id/tv_verified_is"
+                style="@style/StyleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/robotoregular"
+                android:text="" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_assigned_by"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:visibility="gone"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="@string/assigned_by"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:textColor="@android:color/black">
+
+            <TextView
+                android:id="@+id/tv_by_assigned"
+                style="@style/StyleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/robotoregular"
+                android:text="" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_appointment_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="@string/appointment_type"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_14"
+             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical"
+            android:textColor="@android:color/black"
+            >
+
+            <TextView
+                android:id="@+id/tv_type_appointment"
+                style="@style/StyleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/robotoregular"
+                android:text="" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_remarks_by_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="@string/doctor_s_advisory"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical"
+            android:textColor="@android:color/black">
+
+            <TextView
+                android:id="@+id/tv_by_remarks_doctor"
+                style="@style/StyleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/robotoregular"
+                android:text="" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_is_doctor_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="@string/consultation_status"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical"
+            android:textColor="@android:color/black">
+
+            <TextView
+                android:id="@+id/tv_doctor_is_done"
+                style="@style/StyleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/robotoregular"
+                android:text="" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_is_doctor_done_on"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="@string/consultation_completion_time"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical"
+            android:textColor="@android:color/black">
+
+            <TextView
+                android:id="@+id/tv_is_on_doctor_done"
+                style="@style/StyleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/robotoregular"
+                android:text="" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_is_pharmacists_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="@string/pharmacist_drugs_delivery_status"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_14"
+             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical"
+            android:textColor="@android:color/black"
+            >
+
+            <TextView
+                android:id="@+id/tv_pharmacists_is_done"
+                style="@style/StyleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/robotoregular"
+                android:text="" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_is_pharmacists_done_on"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="@string/date_of_phamacists_done"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_14"
+             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:orientation="vertical"
+            android:textColor="@android:color/black"
+            >
+
+            <TextView
+                android:id="@+id/tv_pharmacists_is_done_on"
+                style="@style/StyleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/robotoregular"
+                android:text="" />
+
+        </LinearLayout>
+</LinearLayout>
+        <!--show view prescription details on click-->
+        <TextView
+            android:id="@+id/view_prescription_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin5"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/click_here_for_view_prescription"
+            android:gravity="center"
+
+            android:paddingTop="@dimen/margin3"
+            android:paddingBottom="@dimen/margin3"
+            android:text="@string/view_prescription_click"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:background="@color/colorBlack" />
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

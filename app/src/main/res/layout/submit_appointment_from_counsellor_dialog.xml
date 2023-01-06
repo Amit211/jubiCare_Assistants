@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popupdiolog"
+    android:layout_margin="@dimen/margin10"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_25dp"
+        android:paddingBottom="@dimen/_25dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_tick"
+            android:layout_width="@dimen/margin80"
+            android:layout_height="@dimen/margin80"
+            android:src="@drawable/ic_check"
+            app:civ_border_width="@dimen/margin2"
+            app:civ_border_color="@color/color_light_gray"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_appointment_added"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/appointment_added"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_22"
+            android:textColor="@color/black"
+            android:layout_below="@+id/iv_tick"
+            android:layout_marginTop="@dimen/_5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_appointment_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/your_appointment_has_been_made_successfully"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="@dimen/text_20"
+            android:paddingStart="@dimen/margin2"
+            android:paddingEnd="@dimen/margin2"
+            android:layout_below="@+id/tv_appointment_added"
+            android:layout_marginTop="@dimen/margin20"
+            />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:textColor="@color/white"
+            android:paddingLeft="@dimen/_5dp"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/margin100"
+            android:paddingRight="@dimen/_5dp"
+            android:layout_marginTop="@dimen/_15dp"
+            android:background="@drawable/button"
+            android:layout_below="@+id/tv_appointment_msg"
+            />
+
+        <Button
+            android:id="@+id/btn_assigned_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@string/assign_doctor"
+            android:textColor="@color/white"
+            android:paddingLeft="@dimen/_5dp"
+            android:paddingRight="@dimen/_5dp"
+            android:layout_marginTop="@dimen/_15dp"
+            android:background="@drawable/btn_ok_background"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_appointment_msg"
+            android:layout_marginRight="@dimen/margin15"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
